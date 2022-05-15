@@ -14,4 +14,4 @@ class Solution {
         return true;
     }
 }
-//two pointers: time O(n), space O(1)
+//two pointers: time - O(n), space - O(1)
