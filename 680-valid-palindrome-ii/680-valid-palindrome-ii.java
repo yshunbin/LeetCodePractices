@@ -1,3 +1,4 @@
+//abbda, abdba
 class Solution {
     private boolean checkPalindrome(String s, int i, int j) {
         while (i<j) {
