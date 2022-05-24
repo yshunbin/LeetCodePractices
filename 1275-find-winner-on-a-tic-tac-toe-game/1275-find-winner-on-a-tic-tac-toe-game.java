@@ -35,3 +35,5 @@ class Solution {
         return moves.length == n*n ? "Draw" : "Pending";
     }
 }
+
+//record each move: time O(m) moves, space O(n) two arrays size n
