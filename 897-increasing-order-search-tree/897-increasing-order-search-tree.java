@@ -7,15 +7,15 @@ class Solution {
         return ans.right;
     }
     
-    public void inOrder(TreeNode node) { //in order LNR
-        if (node == null) {
+    public void inOrder(TreeNode node) {
+        if(node == null) {
             return;
         }
-        inOrder(node.left); //L
-        node.left = null; 
-        cur.right = node; //N
-        cur = node; //keep moving cur to right
-        inOrder(node.right); //R
+        inOrder(node.left);
+        node.left = null;
+        cur.right = node;
+        cur = node;
+        inOrder(node.right);
     }
 }
 //in order BST: time - O(n), space - O(h) height of tree
