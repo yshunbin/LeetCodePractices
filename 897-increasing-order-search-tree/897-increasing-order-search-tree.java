@@ -4,15 +4,15 @@ class Solution {
         inOrder(root, vals);
         TreeNode ans = new TreeNode(0);
         TreeNode cur = ans;
-        for(int v : vals){
+        for(int v : vals) {
             cur.right = new TreeNode(v);
             cur = cur.right;
         }
         return ans.right;
     }
     
-    public void inOrder(TreeNode node, List<Integer> vals){
-        if(node == null) {
+    public void inOrder(TreeNode node, List<Integer> vals) { //in order LNR
+        if (node == null) {
             return;
         }
         inOrder(node.left, vals);
