@@ -1,4 +1,4 @@
-https://leetcode.com/problems/closest-binary-search-tree-value/
+//premium qn: https://leetcode.com/problems/closest-binary-search-tree-value/
 
 class Solution {
   public int closestValue(TreeNode node, double target) {
