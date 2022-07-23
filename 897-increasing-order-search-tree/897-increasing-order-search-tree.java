@@ -20,3 +20,4 @@ class Solution {
         inOrder(node.right, vals);
     }
 }
+//in order BST: time - O(n), space - O(n)
