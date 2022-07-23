@@ -1,23 +1,21 @@
-class Solution {    
+class Solution {
+    TreeNode cur;
     public TreeNode increasingBST(TreeNode root) {
-        List<Integer> vals = new ArrayList<>();
-        inOrder(root, vals);
         TreeNode ans = new TreeNode(0);
-        TreeNode cur = ans;
-        for(int v : vals) {
-            cur.right = new TreeNode(v);
-            cur = cur.right;
-        }
+        cur = ans;
+        inOrder(root);
         return ans.right;
     }
     
-    public void inOrder(TreeNode node, List<Integer> vals) { //in order LNR
+    public void inOrder(TreeNode node) { //in order LNR
         if (node == null) {
             return;
         }
-        inOrder(node.left, vals);
-        vals.add(node.val);
-        inOrder(node.right, vals);
+        inOrder(node.left); //L
+        node.left = null; 
+        cur.right = node; //N
+        cur = node; //keep moving cur to right
+        inOrder(node.right); //R
     }
 }
-//in order BST: time - O(n), space - O(n)
+//in order BST: time - O(n), space - O(h) height of tree
