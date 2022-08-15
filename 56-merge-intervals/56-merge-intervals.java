@@ -4,7 +4,7 @@ class Solution {
             return intervals;
         }
         
-        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        Arrays.sort(intervals, (a, b) -> (a[0] - b[0]));
         
         List<int[]> output = new ArrayList(); //[]
         int[] current = intervals[0];
