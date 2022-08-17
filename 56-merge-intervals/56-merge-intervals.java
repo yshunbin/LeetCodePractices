@@ -18,3 +18,4 @@ class Solution {
         return merged.toArray(new int[merged.size()][]);
     }
 }
+//sort - time: O(nlogn), space: O(logn)
