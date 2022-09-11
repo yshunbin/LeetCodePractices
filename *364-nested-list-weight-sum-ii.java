@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/nested-list-weight-sum-ii/
 class Solution {
     public int depthSumInverse(List<NestedInteger> nestedList) {
         Queue<NestedInteger> queue = new LinkedList<>();
