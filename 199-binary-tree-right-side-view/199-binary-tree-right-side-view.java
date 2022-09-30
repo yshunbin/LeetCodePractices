@@ -20,3 +20,4 @@ class Solution {
         }
     }
 }
+//recursive DFS: time - O(n), space - O(h)
